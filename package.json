@@ -1,0 +1,27 @@
+{
+  "name": "minitwit",
+  "version": "1.0.0",
+  "description": "Tweets limited to mentions and one word, clocking in a total tweet length of 28 characters Self-expression: keep it simple, stupid",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NSS-Cohort-9/minitwit.git"
+  },
+  "author": "NSS-Cohort-9",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NSS-Cohort-9/minitwit/issues"
+  },
+  "homepage": "https://github.com/NSS-Cohort-9/minitwit#readme",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "ejs": "^2.3.3",
+    "express": "^4.13.3",
+    "less-middleware": "^2.0.1",
+    "mongodb": "^2.0.42",
+    "morgan": "^1.6.1"
+  }
+}
