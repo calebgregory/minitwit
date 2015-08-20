@@ -6,7 +6,9 @@ var morgan = require('morgan');
 var sass = require('node-sass-middleware');
 
 var routes = require('./routes');
+var posts = require('./post/post.routes')
 var database = require('../lib/mongo/');
+var bodyParser = require('body-parser')
 
 var app = module.exports = express();
 
@@ -27,7 +29,10 @@ app.use(sass({
 
 app.use(morgan('dev'));
 
+app.use(bodyParser.urlencoded({ extended: false }))
+
 app.use('/', routes);
+app.use('/post', posts);
 
 require('../lib/errorHandler/');
 
