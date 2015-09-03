@@ -11,6 +11,8 @@ router.get('/auth/twitter/cb', ctrl.authTwitterCb);
 router.get('/logout', ctrl.logout);
 router.get('/profile', isLoggedIn, ctrl.show);
 
+router.get('/user/search', ctrl.search);
+
 module.exports = router;
 
 function isLoggedIn(req, res, next) {
